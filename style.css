@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+main {
+  display: flex;
+  margin: 50px;
+  padding: 30px;
+  align-items: center;
+  justify-content: ;
+  gap: 50px;
+}
+
+.setting {
+  border: 2px solid black;
+}
