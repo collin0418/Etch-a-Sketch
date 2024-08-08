@@ -13,7 +13,18 @@
 
     <main>
       <div class="setting">
-        <div class="color-picker"></div>
+        <input
+          type="color"
+          id="color-picker"
+          name="color_picker"
+          value="#000000"
+        />
+        <button class="color-mode">Color Mode</buttton>
+        <button class="random-mode">Random Color</button>
+        <button class="eraser">Eraser</button>
+        <button class="reset">Reset</button>
+        <p>20 x 20</p>
+        <input type="range" id="sizebar" value="20" min="1" max="100" />
       </div>
       <div class="board"></div>
     </main>

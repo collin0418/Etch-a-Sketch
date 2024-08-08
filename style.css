@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 body {
@@ -19,10 +20,55 @@ main {
   margin: 50px;
   padding: 30px;
   align-items: center;
-  justify-content: ;
+  justify-content: center;
   gap: 50px;
 }
 
 .setting {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+.setting > button,
+input {
+  width: 100%;
+}
+
+.setting > button {
+  padding: 10px;
+  border-radius: 10px;
   border: 2px solid black;
+  cursor: pointer;
+}
+
+input[type="color"] {
+  appearance: none;
+  width: 100px;
+  height: 100px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  transition: transform 0.1s ease-in-out;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 50%;
+}
+
+#color-picker:hover {
+  transform: scale(1.05);
+}
+#color-picker:active {
+  transform: scale(0.95);
+}
+
+.board {
+  display: grid;
+  height: 600px;
+  width: 600px;
+  border: 3px solid black;
 }
