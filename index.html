@@ -19,16 +19,20 @@
           name="color_picker"
           value="#000000"
         />
-        <button class="color-mode">Color Mode</buttton>
-        <button class="random-mode">Random Color</button>
-        <button class="eraser">Eraser</button>
+        <button class="color-mode active">Color Mode</buttton>
+        <button class="random-color">Random Color</button>
+        <button class="toggle-grid">Toggle Grid</button>
         <button class="reset">Reset</button>
-        <p>20 x 20</p>
-        <input type="range" id="sizebar" value="20" min="1" max="100" />
+        <p id="value-text"></p>
+        <input type="range" id="size-bar" value="20" min="1" max="100" />
       </div>
-      <div class="board"></div>
+      <div class="board" id="board"></div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <span>Created By <a href="https://github.com/collin0418/Etch-a-Sketch">CollinS</a></span>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
